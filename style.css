@@ -43,7 +43,7 @@ ul{
 }
 
 .pimg0{
-    background-image: url(IMG_20240203_130336.png);
+    background-image: url(IMG_3786.png);
     min-height: 200px;
 }
 
@@ -69,6 +69,7 @@ ul{
     background-position: center;
     background-size: cover;
     position: relative;
+    border-radius: 20px;
     
 }
 
@@ -93,6 +94,7 @@ ul{
     font-family: "Alfa Slab One", serif;
     font-weight: 400;
     font-style: normal;
+    opacity: 0.95;
 }
 
 .section{
@@ -102,6 +104,7 @@ ul{
     font-family: "Bai Jamjuree", sans-serif;
     font-weight: 600;
     font-style: normal;
+    border-radius: 10px;
 }
 
 .section_sponsor{
@@ -113,15 +116,6 @@ ul{
     font-family: "Bai Jamjuree", sans-serif;
     font-weight: 600;
     font-style: normal;
-}
-
-.valider_{
-    background: transparent;
-    background-image: url(VALIDER.png);
-    min-height: 101px;
-    width: 429px;
-    border: none;
-
 }
 
 .BDP{
@@ -151,10 +145,63 @@ ul{
    background-color: white;
 }
 
+.countdown{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
 
+.boite{
+    width: 210px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    background-color: #E7D63F;
+    color: #1B368B;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
+.valeur{
+    font-family: "Alfa Slab One", serif;
+    font-weight: 1000px;
+    display: block;
+    font-size: 70px;
+    
+}
 
+.unite{
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.01px;
+    text-transform: uppercase;
+}
 
+.sectioncountdown{
+    background-color: #E7D63F;
+    color:#1B368B;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    padding: 20px;
+    font-family: "Alfa Slab One", serif;
+    font-weight:lighter;
+    font-style:normal;
+    letter-spacing: 2.5px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.sectioncountdown2{
+    background-color: #E7D63F;
+    display: block;
+    padding: 30px;
+}
 
 .alfa-slab {
     font-family: "Alfa Slab One", serif;
