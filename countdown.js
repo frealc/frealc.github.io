@@ -8,7 +8,6 @@ let datecountdown = new Date("April 6, 2024 09:00:00").getTime()
                 let heures = Math.floor(tpsrestant % (1000*60*60*24) / (1000*60*60));
                 let minutes = Math.floor(tpsrestant % (1000*60*60) / (1000*60));
                 let secondes = Math.floor(tpsrestant % (1000*60) / (1000));
-                console.log(jours,heures,minutes,secondes)
 
                 document.querySelector(".countdown").innerHTML =`
                     <div class="boite">
