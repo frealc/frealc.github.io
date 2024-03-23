@@ -1,9 +1,31 @@
 <html>
-<head>
-<title> Redirection HTML </title>
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-<meta http-equiv="refresh" content="0; URL=ACCUEIL.html">
-</head>
-<body>
-</body>
+    <head>
+        <title> Redirection HTML </title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script> 
+        function isMobileDevice() { 
+ if( navigator.userAgent.match(/iPhone/i)
+ || navigator.userAgent.match(/webOS/i)
+ || navigator.userAgent.match(/Android/i)
+ || navigator.userAgent.match(/iPad/i)
+ || navigator.userAgent.match(/iPod/i)
+ || navigator.userAgent.match(/BlackBerry/i)
+ || navigator.userAgent.match(/Windows Phone/i)
+ ){
+    return true;
+  }
+ else {
+    return false;
+  }
+}
+            if (isMobileDevice()){
+                document.head.innerHTML= '<meta http-equiv="refresh" content="0; URL=ACCUEIL2.html">';
+            } else {
+                document.head.innerHTML= '<meta http-equiv="refresh" content="0; URL=ACCUEIL2.html">'
+            }
+            </script>
+    </head>
+
+    <body>
+    </body>
 </html>
