@@ -208,6 +208,39 @@ ul{
     padding: 30px;
 }
 
+.sectionapropos{
+    background-color: #1B368B;
+    display: block;
+    padding: 30px;
+}
+
+.sectionphotos{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.photos{
+    position: relative;
+    height: 300px;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .alfa-slab {
     font-family: "Alfa Slab One", serif;
     font-weight: 400;
