@@ -1,0 +1,231 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-size: 16px;
+    font-weight: 400;
+    height:100%;
+    margin: 0;
+    line-height: 1.8em;
+    color: #1B368B;
+}
+.navbar{
+    margin-bottom: 3px;
+    background-color: #1B368B;
+}
+ul{
+    list-style: none;
+    display:flex;
+    text-align: right;
+}
+.navbar ul li{
+    padding-left: 20px;
+    padding-top: 50px;
+}
+.navbar ul li a{
+    color:white;
+    text-decoration: none;
+       
+}
+.navbar ul li a:hover{
+    font-weight: bold;
+    font-size: large;
+    transition: 0.3s ease-in;
+    color:#E7D63F;
+}
+
+.pimg1{
+    background-image: url(IMG_20240203_114234.jpg);
+    min-height: 425px;
+    background-attachment: fixed;
+}
+
+.pimg0{
+    background-image: url(IMG_3786.png);
+    min-height: 200px;
+}
+
+.pimg2{
+    background-image: url(WhatsApp\ Image\ 2024-02-04\ at\ 15.08.46.jpeg);
+    min-height: 200px;
+}
+
+.pimg4{
+    background-image: url(IMG_20240203_130336.png);
+    min-height: 200px;
+}
+
+.pimg5{
+    background-image: url(IMG_20240203_130336.png);
+    min-height: 200px;
+}
+
+
+
+.pimg0, .pimg1, .pimg2, .pimg4, .pimg5{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+    
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 27px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.textbg{
+    background-color: #1B368B;
+    color: white;
+    padding: 20px;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 0.95;
+}
+
+.section{
+    text-align: center;
+    padding: 20px 80px;
+    text-transform: uppercase;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 10px;
+}
+
+.section_sponsor{
+    text-align: center;
+    padding-top: 100px;
+
+    padding-bottom: 100px;
+    text-transform: uppercase;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.BDP{
+    text-align: right;
+    width: 100%;
+    padding: 20px 90px;
+    text-transform: uppercase;
+    background-color: #1B368B;
+}
+
+.textBDP{
+    color: white;
+}
+
+
+#logo{
+   padding-top: 20px;
+   padding-left: 20px;
+   padding-right: 40px;
+   background-color: white;
+}
+
+#nom{
+    padding-top: 20px;
+   padding-left: 0px;
+   padding-right: 30px;
+   background-color: white;
+}
+
+.countdown{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.boite{
+    width: 210px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    background-color: #E7D63F;
+    color: #1B368B;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.valeur{
+    font-family: "Alfa Slab One", serif;
+    font-weight: 1000px;
+    display: block;
+    font-size: 70px;
+    
+}
+
+.unite{
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.01px;
+    text-transform: uppercase;
+}
+
+.sectioncountdown{
+    background-color: #E7D63F;
+    color:#1B368B;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    padding: 20px;
+    font-family: "Alfa Slab One", serif;
+    font-weight:lighter;
+    font-style:normal;
+    letter-spacing: 2.5px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.sectioncountdown2{
+    background-color: #E7D63F;
+    display: block;
+    padding: 30px;
+}
+
+.alfa-slab {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.5px;
+
+  }
+
+.bai-jamjuree-semibold {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.01px;
+  }
+
+.bai-jamjuree-extralight {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  .bai-jamjuree-bold {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }

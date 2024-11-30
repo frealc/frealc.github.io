@@ -1,0 +1,1201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 100vh;
+    color: #1B368B;
+    display: grid;
+    align-content: space-between;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+header::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 46, 143, 0.1);
+    backdrop-filter: blur(5px); 
+    z-index: -1;
+}
+.navbar a{
+    font-size: 1.15rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+#check {
+    display: none;
+}
+.icone{
+    position:absolute;
+    right: 5%;
+    font-size : 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+@media(max-width:2000px){
+    .header{
+        padding: 1.3rem 5%;
+    }
+}
+@media(max-width: 1100px){
+    .icone{
+        display: inline-flex;
+    }
+    #check:checked~.icone #menu-icone{
+        display: none;
+    }
+    .icone #close-icone {
+        display: none;
+    }
+    #check:checked~.icone #close-icone{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height:0;
+        background: rgba(26, 46, 143, 0.1);
+        backdrop-filter: blur(5px);
+        box-shadow: 0.5rem 1rem rgba(27, 17, 94, 0.1) ;
+        overflow: hidden;
+        transition: .3s ease;
+    }
+    #check:checked~.navbar{
+        height: 17.7rem;
+    }
+    .navbar a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+}
+
+.bienvenue{
+    max-width: 1200px;
+    padding: 16px;
+    margin:auto;
+    margin-top: 180px;
+    text-align: center;
+}
+.bienvenue .titre{
+    font-size: 50px;
+    color :#E7D63F
+}
+.bienvenue .bouton1{
+    margin-top: 30px;
+}
+.bouton1{
+    padding: 12px 20px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: #1B368B;
+    background: #E7D63F;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.5px;
+}
+.bouton1 a{
+    text-decoration: none;
+    color: #1B368B;
+}
+button a:hover {
+    text-decoration: none;
+    color: #E7D63F;
+}
+button:hover{
+    background-color: #1B368B;
+    color: #E7D63F;
+}
+
+#nous .container{
+    width: 90%;
+    max-width: 2000px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px 30px;
+    margin-top: 30px;
+}
+#nous .container .nous-contenu{
+    margin-top: 10%;
+    align-items: center;
+    padding-left: 50px;
+}
+#nous .container .nous-contenu h4{
+    font-size: 30px;
+    line-height: 26px;
+    padding-bottom: 15px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#nous .container .nous-contenu h1{
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 15px;
+}
+#nous .container .nous-contenu p{
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 15px;
+}
+#nous .container .nous-image{
+    margin-left: 12%;
+    overflow: hidden;
+    display: flex;
+    display: grid;
+    grid-gap: 5px 30px;
+    font-size: 15px;
+    filter: drop-shadow(0 0 0.75rem rgb(153, 140, 191));
+}
+#nous .container .nous-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2%;
+}
+
+#palmares .container{
+    width: 90%;
+    max-width: 2000px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px 30px;
+    margin-top: 30px;
+}
+#palmares .container .palmares-contenu{
+    margin-top: 10%;
+    align-items: center;
+    padding-left: 50px;
+}
+#palmares .container .palmares-contenu h4{
+    font-size: 30px;
+    line-height: 26px;
+    padding-bottom: 15px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 100;
+    font-style: normal;
+
+}
+#palmares .container .palmares-contenu h1{
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 15px;
+}
+#palmares .container .palmares-contenu p{
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 15px;
+}
+#palmares .container .palmares-image{
+    margin-left: 12%;
+    overflow: hidden;
+    display: flex;
+    display: grid;
+    grid-gap: 5px 30px;
+    font-size: 15px;
+    filter: drop-shadow(0 0 0.75rem rgb(153, 140, 191));
+    text-align: right;
+}
+#palmares .container .palmares-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2%;
+}
+
+#photos {
+    min-height: 300px;
+    background-image: url("image_compet_2.jpg");
+    background-position:center;
+    background-size: cover;
+}
+#photos .container {
+    max-width: 3000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+
+.pimg0{
+    background-image: url(equipe.png);
+    min-height: 200px;
+}
+.pimg1{
+    
+    width:100%;
+    background: url(image_compet_1.jpg);
+    background-size:cover;
+    background-position: center; 
+    min-height: 425px;
+    background-attachment: fixed;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pimg2{
+    background-image: url(IMG-20240406-WA0045.jpg);
+    min-height: 200px;
+}
+
+.pimg4{
+    background-image: url(IMG-20240406-WA0033.jpg);
+    min-height: 200px;
+}
+
+.pimg5{
+    background-image: url(lyceedelacotierelaboisse01.jpg);
+    min-height: 200px;
+}
+
+.pimg6{
+    background-image: url(photo2equipes.jpg);
+    min-height: 200px;
+}
+
+
+
+.pimg0, .pimg2, .pimg4, .pimg5, .pimg6{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+    
+}
+
+.ptext{
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 27px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 60px;
+}
+
+.textbg{
+    background-color: #1B368B;
+    color: white;
+    padding: 10px;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 0.95;
+    border-radius: 15px;
+}
+
+.section2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+}
+.section{
+    text-align: center;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 10px;
+}
+.section3{
+    text-align: center;
+    padding: 20px 80px;
+    text-transform: uppercase;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 10px;
+}
+.section_sponsor{
+    display:flex;
+    padding: 20px 16px;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#fff;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.section_sponsor a{
+    margin-bottom: 5.5px;
+}
+.remerciements{
+    margin-bottom: 30px;
+    margin-top: -15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    font-size:25px;
+    font-weight:500;
+    border-width: 10px;
+    border-style:double;
+    border-color: #1B368B;
+    border-radius:5px ;
+}
+
+#logo{
+   padding: 10px;
+}
+
+.countdown{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.boite{
+    width: 210px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    background-color: #E7D63F;
+    color: #1B368B;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.valeur{
+    font-family: "Alfa Slab One", serif;
+    font-weight: 1000px;
+    display: block;
+    font-size: 70px;
+    
+}
+
+.unite{
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.01px;
+    text-transform: uppercase;
+}
+
+.sectioncountdown{
+    background-color: #E7D63F;
+    color:#1B368B;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    padding: 20px;
+    font-family: "Alfa Slab One", serif;
+    font-weight:lighter;
+    font-style:normal;
+    letter-spacing: 2.5px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.sectioncountdown2{
+    background-color: #E7D63F;
+    display: block;
+    padding: 30px;
+}
+
+.sectionapropos{
+    background-color: #1B368B;
+    display: block;
+    padding: 30px;
+}
+.section_roles{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    width:325px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 40px;
+}
+.card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.card-content{
+    padding: 16px;
+}
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.card-content p{
+    font-size: 17px;
+    line-height: 1.3;
+}
+.sectionphotos{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.slider{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+.slider .list .item{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0 0 0 0;
+}
+.slider .list .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .list .item button{
+    margin-top: 15px;
+}
+.slider .list .item .content{
+    position: absolute;
+    top: 20%;
+    width: 1140px;
+    max-width:80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: #193180;
+    text-shadow: 0 5px 10px #0004;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: bold;
+}
+
+.slider .list .item .content .title,
+.slider .list .item .content .type{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.slider .list .item .content .title{
+    -webkit-text-stroke: 0.4px #E7D63F;
+}
+.slider .list .item .type{
+    color: #E7D63F;
+    -webkit-text-stroke: 0.4px #1B368B;
+}
+.slider .list .description{
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size:20px ;
+}
+/* Thumbnail Section  */
+.slider .thumbnail{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+
+.slider .thumbnail .item{
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.slider .thumbnail .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* nextPrevArrows Section  */
+.slider .nextPrevArrows{
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    z-index: 100;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.slider .nextPrevArrows button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #E7D63F;
+    border: none;
+    color: #1B368B;
+    font-family: monospace;
+    font-weight: bold;
+    transition: .5s;
+    cursor: pointer;
+}
+.slider .nextPrevArrows button:hover{
+    background-color: #1B368B;
+    color: #E7D63F;
+}
+
+/* Animation Part */
+.slider .list .item:nth-child(1){
+    z-index: 1;
+}
+
+
+/* animation text in first item */
+.slider .list .item:nth-child(1) .content .title,
+.slider .list .item:nth-child(1) .content .type,
+.slider .list .item:nth-child(1) .content .description,
+.slider .list .item:nth-child(1) .content .buttons
+{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s 1s linear 1 forwards;
+}
+@keyframes showContent{
+    to{
+        transform: translateY(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+.slider .list .item:nth-child(1) .content .title{
+    animation-delay: 0.4s !important;
+}
+.slider .list .item:nth-child(1) .content .type{
+    animation-delay: 0.6s !important;
+}
+.slider .list .item:nth-child(1) .content .description{
+    animation-delay: 0.8s !important;
+}
+.slider .list .item:nth-child(1) .content .buttons{
+    animation-delay: 1s !important;
+}
+
+
+
+
+/* Animation for next button click */
+.slider.next .list .item:nth-child(1) img{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 30px;
+    animation: showImage .5s linear 1 forwards;
+}
+
+@keyframes showImage{
+    to{
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+.slider.next .thumbnail .item:nth-last-child(1){
+    overflow: hidden;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+.slider.prev .list .item img{
+    z-index: 100;
+}
+
+
+/* Animation for next2 button click */
+.slider.next2 .list .item:nth-child(1) img{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 30px;
+    animation: showImage .5s linear 1 forwards;
+}
+
+.slider.next2 .thumbnail .item:nth-last-child(1){
+    overflow: hidden;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+.slider.prev2 .list .item img{
+    z-index: 100;
+}
+
+
+
+
+@keyframes showThumbnail{
+    from{
+        width: 0;
+        opacity: 0;
+    }
+}
+
+
+.slider.next .thumbnail{
+    animation: effectNext .5s linear 1 forwards;
+}
+.slider.next2 .thumbnail{
+    animation: effectNext .5s linear 1 forwards;
+}
+@keyframes effectNext{
+    from{
+        transform: translateX(150px);
+    }
+}
+
+
+
+/* Animation for prev button click */
+.slider.prev .list .item:nth-child(2){
+    z-index: 2;
+}
+
+.slider.prev .list .item:nth-child(2) img{
+    animation: outFrame 0.5s linear 1 forwards;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Animation for prev button click */
+.slider.prev2 .list .item:nth-child(2){
+    z-index: 2;
+}
+
+.slider.prev2 .list .item:nth-child(2) img{
+    animation: outFrame 0.5s linear 1 forwards;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+@keyframes outFrame{
+    to{
+        width: 150px;
+        height: 220px;
+        bottom: 50px;
+        left: 50%;
+        border-radius: 20px;
+    }
+}
+
+.slider.prev .thumbnail .item:nth-child(1){
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+.slider.next .nextPrevArrows button,
+.slider.prev .nextPrevArrows button{
+    pointer-events: none;
+}
+
+
+.slider.prev .list .item:nth-child(2) .content .title,
+.slider.prev .list .item:nth-child(2) .content .type,
+.slider.prev .list .item:nth-child(2) .content .description,
+.slider.prev .list .item:nth-child(2) .content .buttons
+{
+    animation: contentOut 1.5s linear 1 forwards!important;
+}
+
+
+
+
+.slider.prev2 .thumbnail .item:nth-child(1){
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+.slider.next2 .nextPrevArrows button,
+.slider.prev2 .nextPrevArrows button{
+    pointer-events: none;
+}
+
+
+.slider.prev2 .list .item:nth-child(2) .content .title,
+.slider.prev2 .list .item:nth-child(2) .content .type,
+.slider.prev2 .list .item:nth-child(2) .content .description,
+.slider.prev2 .list .item:nth-child(2) .content .buttons
+{
+    animation: contentOut 1.5s linear 1 forwards!important;
+}
+
+
+
+
+@keyframes contentOut{
+    to{
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 678px) {
+    .slider .list .item .content{
+        padding-right: 0;
+    }
+    .slider .list .item .content .title{
+        font-size: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.slider2{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+.slider2 .list2 .item{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0 0 0 0;
+}
+.slider2 .list2 .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider2 .list2 .item button{
+    margin-top: 15px;
+}
+.slider2 .list2 .item .content{
+    position: absolute;
+    top: 20%;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: #193180;
+    text-shadow: 0 5px 10px #0004;
+    font-weight: bold;
+}
+
+.slider2 .list2 .item .content .title,
+.slider2 .list2 .item .content .type{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.slider2 .list2 .item .content .title{
+    -webkit-text-stroke: 0.4px #E7D63F;
+}
+.slider2 .list2 .item .type{
+    color: #E7D63F;
+    -webkit-text-stroke: 0.4px #1B368B;
+}
+.slider2 .list2 .description{
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size:20px ;
+}
+/* Thumbnail Section  */
+.slider2 .thumbnail2{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+
+.slider2 .thumbnail2 .item{
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.slider2 .thumbnail2 .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* nextPrevArrows Section  */
+.slider2 .nextPrevArrows2{
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    z-index: 100;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.slider2 .nextPrevArrows2 button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #E7D63F;
+    border: none;
+    color: #1B368B;
+    font-family: monospace;
+    font-weight: bold;
+    transition: .5s;
+    cursor: pointer;
+}
+.slider2 .nextPrevArrows2 button:hover{
+    background-color: #1B368B;
+    color: #E7D63F;
+}
+
+/* Animation Part */
+.slider2 .list2 .item:nth-child(1){
+    z-index: 1;
+}
+
+
+/* animation text in first item */
+.slider2 .list2 .item:nth-child(1) .content .title,
+.slider2 .list2 .item:nth-child(1) .content .type,
+.slider2 .list2 .item:nth-child(1) .content .description,
+.slider2 .list2 .item:nth-child(1) .content .buttons
+{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent2 .5s 1s linear 1 forwards;
+}
+@keyframes showContent2{
+    to{
+        transform: translateY(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+.slider2 .list2 .item:nth-child(1) .content .title{
+    animation-delay: 0.4s !important;
+}
+.slider2 .list2 .item:nth-child(1) .content .type{
+    animation-delay: 0.6s !important;
+}
+.slider2 .list2 .item:nth-child(1) .content .description{
+    animation-delay: 0.8s !important;
+}
+.slider2 .list2 .item:nth-child(1) .content .buttons{
+    animation-delay: 1s !important;
+}
+
+
+
+
+/* Animation for next button click */
+.slider2.next2 .list2 .item:nth-child(1) img{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 30px;
+    animation: showImage2 .5s linear 1 forwards;
+}
+
+@keyframes showImage2{
+    to{
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+.slider2.next2 .thumbnail2 .item:nth-last-child(1){
+    overflow: hidden;
+    animation: showThumbnail2 .5s linear 1 forwards;
+}
+.slider2.prev2 .list2 .item img{
+    z-index: 100;
+}
+
+
+/* Animation for next2 button click */
+
+
+@keyframes showThumbnail2{
+    from{
+        width: 0;
+        opacity: 0;
+    }
+}
+
+
+.slider2.next2 .thumbnail2{
+    animation: effectNext2 .5s linear 1 forwards;
+}
+
+@keyframes effectNext2{
+    from{
+        transform: translateX(150px);
+    }
+}
+
+
+
+/* Animation for prev button click */
+.slider2.prev2 .list2 .item:nth-child(2){
+    z-index: 2;
+}
+
+.slider2.prev2 .list2 .item:nth-child(2) img{
+    animation: outFrame2 0.5s linear 1 forwards;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+@keyframes outFrame2{
+    to{
+        width: 150px;
+        height: 220px;
+        bottom: 50px;
+        left: 50%;
+        border-radius: 20px;
+    }
+}
+
+.slider2.prev2 .thumbnail2 .item:nth-child(1){
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+.slider2.next2 .nextPrevArrows2 button,
+.slider2.prev2 .nextPrevArrows2 button{
+    pointer-events: none;
+}
+
+
+.slider2.prev2 .list2 .item:nth-child(2) .content .title,
+.slider2.prev2 .list2 .item:nth-child(2) .content .type,
+.slider2.prev2 .list2 .item:nth-child(2) .content .description,
+.slider2.prev2 .list2 .item:nth-child(2) .content .buttons
+{
+    animation: contentOut2 1.5s linear 1 forwards!important;
+}
+
+
+
+
+
+
+@keyframes contentOut2{
+    to{
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 678px) {
+    .slider2 .list2 .item .content{
+        padding-right: 0;
+    }
+    .slider2 .list2 .item .content .title{
+        font-size: 50px;
+    }
+}
+
+
+
+
+.alfa-slab {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.5px;
+
+  }
+
+.bai-jamjuree-semibold {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.01px;
+  }
+
+.bai-jamjuree-extralight {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+.bai-jamjuree-bold {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+footer .container{
+    display:flex;
+    padding: 20px 16px;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#fff;
+}
+footer .container p{
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.01px;
+    margin-bottom: -3px;
+}
+footer .container a{
+    margin-bottom: -5.5px;
+}
+.sectionfooter{
+    background-color: #1B368B;
+    display: block;
+    padding: 2px;
+}
+
+
+
+
+
+
+
+@media (max-width: 1500px){
+    #nous .container .nous-contenu{
+        padding-left: 10%;
+        margin-top: 3%;
+    }
+    #nous .container .nous-image{
+        margin-left: 10%;
+        overflow: hidden;
+        font-size: 12px;
+    }
+    #nous .container .nous-contenu p{
+        padding-bottom: 0px;
+    }    
+    #palmares .container .palmares-contenu{
+        padding-left: 10%;
+        margin-top: 3%;
+    }
+    #palmares .container .palmares-image{
+        margin-left: 10%;
+        overflow: hidden;
+        font-size: 12px;
+    }
+    .section_sponsor{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .slider .list .item .content{
+        top: 10%;
+    }
+    .slider2 .list2 .item .content{
+        top: 10%;
+    }
+}
+@media (max-width: 1100px){
+    #nous .container{
+        width:90%;
+        grid-template-columns: 1fr;
+    }
+    #nous .container .nous-contenu{
+        padding-left: 10%;
+        margin-top: 0%;
+    }
+    #nous .container .nous-contenu p{
+        padding-bottom: 15px;
+    } 
+    #nous .container .nous-image{
+        font-size: 9px;
+    }
+    #palmares .container{
+        width:90%;
+        grid-template-columns: 1fr;
+    }
+    #palmares .container .palmares-contenu{
+        padding-left: 10%;
+        margin-top: 0%;
+    }
+    #palmares .container .palmares-image{
+        font-size: 9px;
+    }
+    footer .container{
+        flex-direction: column;
+        gap:16px;
+    }
+    .section_sponsor{
+        flex-direction: column;
+        gap:16px;
+    }
+    .slider .list .item .content{
+        top: 5%;
+    }
+    .slider2 .list2 .item .content{
+        top: 5%;
+    }
+}
