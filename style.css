@@ -93,6 +93,14 @@ header::before{
         margin: 1.5rem 0;
         text-align: center;
     }
+    #photos .container {
+        max-width: 3000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+    }
 }
 
 .bienvenue{
@@ -1197,5 +1205,10 @@ footer .container a{
     }
     .slider2 .list2 .item .content{
         top: 5%;
+    }
+    .slider2 .list2 .item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
