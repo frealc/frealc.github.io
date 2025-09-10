@@ -989,11 +989,6 @@ button:hover{
     animation: contentOut2 1.5s linear 1 forwards!important;
 }
 
-
-
-
-
-
 @keyframes contentOut2{
     to{
         transform: translateY(-150px);
@@ -1009,6 +1004,261 @@ button:hover{
         font-size: 50px;
     }
 }
+
+
+/*.slider3{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+.slider3 .list3 .item{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0 0 0 0;
+}
+.slider3 .list3 .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider3 .list3 .item button{
+    margin-top: 15px;
+}
+.slider3 .list3 .item .content{
+    position: absolute;
+    top: 20%;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: #193180;
+    text-shadow: 0 5px 10px #0004;
+    font-weight: bold;
+}
+
+.slider3 .list3 .item .content .title,
+.slider3 .list3 .item .content .type{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.slider3 .list3 .item .content .title{
+    -webkit-text-stroke: 0.4px #E7D63F;
+}
+.slider3 .list3 .item .type{
+    color: #E7D63F;
+    -webkit-text-stroke: 0.4px #1B368B;
+}
+.slider3 .list3 .description{
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size:20px ;
+}
+/* Thumbnail Section  *//* 
+.slider3 .thumbnail3{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+
+.slider3 .thumbnail3 .item{
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.slider3 .thumbnail3 .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* nextPrevArrows Section  *//*
+.slider3 .nextPrevArrows3{
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    z-index: 100;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.slider3 .nextPrevArrows3 button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #E7D63F;
+    border: none;
+    color: #1B368B;
+    font-family: monospace;
+    font-weight: bold;
+    transition: .5s;
+    cursor: pointer;
+}
+.slider3 .nextPrevArrows3 button:hover{
+    background-color: #1B368B;
+    color: #E7D63F;
+}
+
+/* Animation Part */
+.slider3 .list3 .item:nth-child(1){
+    z-index: 1;
+}
+
+
+/* animation text in first item *//*
+.slider3 .list3 .item:nth-child(1) .content .title,
+.slider3 .list3 .item:nth-child(1) .content .type,
+.slider3 .list3 .item:nth-child(1) .content .description,
+.slider3 .list3 .item:nth-child(1) .content .buttons
+{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent3 .5s 1s linear 1 forwards;
+}
+@keyframes showContent3{
+    to{
+        transform: translateY(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+.slider3 .list3 .item:nth-child(1) .content .title{
+    animation-delay: 0.4s !important;
+}
+.slider3 .list3 .item:nth-child(1) .content .type{
+    animation-delay: 0.6s !important;
+}
+.slider3 .list3 .item:nth-child(1) .content .description{
+    animation-delay: 0.8s !important;
+}
+.slider3 .list3 .item:nth-child(1) .content .buttons{
+    animation-delay: 1s !important;
+}
+
+
+
+
+/* Animation for next button click *//*
+.slider3.next3 .list3 .item:nth-child(1) img{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 30px;
+    animation: showImage3 .5s linear 1 forwards;
+}
+
+@keyframes showImage3{
+    to{
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+.slider3.next3 .thumbnail3 .item:nth-last-child(1){
+    overflow: hidden;
+    animation: showThumbnail3 .5s linear 1 forwards;
+}
+.slider3.prev3 .list3 .item img{
+    z-index: 100;
+}
+
+
+/* Animation for next3 button click *//*
+@keyframes showThumbnail3{
+    from{
+        width: 0;
+        opacity: 0;
+    }
+}
+
+.slider3.next3 .thumbnail3{
+    animation: effectNext3 .5s linear 1 forwards;
+}
+
+@keyframes effectNext3{
+    from{
+        transform: translateX(150px);
+    }
+}
+
+
+
+/* Animation for prev button click *//*
+.slider3.prev3 .list3 .item:nth-child(2){
+    z-index: 2;
+}
+
+.slider3.prev3 .list3 .item:nth-child(2) img{
+    animation: outFrame3 0.5s linear 1 forwards;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+@keyframes outFrame3{
+    to{
+        width: 150px;
+        height: 220px;
+        bottom: 50px;
+        left: 50%;
+        border-radius: 20px;
+    }
+}
+
+.slider3.prev3 .thumbnail3 .item:nth-child(1){
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+.slider3.next3 .nextPrevArrows3 button,
+.slider3.prev3 .nextPrevArrows3 button{
+    pointer-events: none;
+}
+
+
+.slider3.prev3 .list3 .item:nth-child(2) .content .title,
+.slider3.prev3 .list3 .item:nth-child(2) .content .type,
+.slider3.prev3 .list3 .item:nth-child(2) .content .description,
+.slider3.prev3 .list3 .item:nth-child(2) .content .buttons
+{
+    animation: contentOut3 1.5s linear 1 forwards!important;
+}
+
+@keyframes contentOut3{
+    to{
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 678px) {
+    .slider3 .list3 .item .content{
+        padding-right: 0;
+    }
+    .slider3 .list3 .item .content .title{
+        font-size: 50px;
+    }
+}*/
 
 
 
@@ -1143,6 +1393,14 @@ footer .container a{
         top: 5%;
     }
     .slider2 .list2 .item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .slider3 .list3 .item .content{
+        top: 5%;
+    }
+    .slider3 .list3 .item img{
         width: 100%;
         height: 100%;
         object-fit: cover;

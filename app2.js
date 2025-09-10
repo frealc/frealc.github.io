@@ -13,12 +13,10 @@ nextBtn2.onclick = function() {
     moveSlider2('next2')
 }
 
-
 // Function for prev button 
 prevBtn2.onclick = function() {
     moveSlider2('prev2')
 }
-
 
 function moveSlider2(direction) {
     let sliderItems2 = sliderList2.querySelectorAll('.item')
@@ -33,7 +31,6 @@ function moveSlider2(direction) {
         thumbnail2.prepend(thumbnailItems2[thumbnailItems2.length - 1])
         slider2.classList.add('prev2')
     }
-
 
     slider2.addEventListener('animationend', function() {
         if(direction === 'next2'){
