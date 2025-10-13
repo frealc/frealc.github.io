@@ -1006,7 +1006,7 @@ button:hover{
 }
 
 
-/*.slider3{
+.slider3{
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -1056,7 +1056,7 @@ button:hover{
     background-color: rgba(255, 255, 255, 0.4);
     font-size:20px ;
 }
-/* Thumbnail Section  *//* 
+ /*Thumbnail Section  */ 
 .slider3 .thumbnail3{
     position: absolute;
     bottom: 50px;
@@ -1083,7 +1083,7 @@ button:hover{
 }
 
 
-/* nextPrevArrows Section  *//*
+ /*nextPrevArrows Section  */
 .slider3 .nextPrevArrows3{
     position: absolute;
     top: 80%;
@@ -1112,13 +1112,13 @@ button:hover{
     color: #E7D63F;
 }
 
-/* Animation Part */
+ Animation Part */
 .slider3 .list3 .item:nth-child(1){
     z-index: 1;
 }
 
 
-/* animation text in first item *//*
+/*animation text in first item */
 .slider3 .list3 .item:nth-child(1) .content .title,
 .slider3 .list3 .item:nth-child(1) .content .type,
 .slider3 .list3 .item:nth-child(1) .content .description,
@@ -1152,7 +1152,7 @@ button:hover{
 
 
 
-/* Animation for next button click *//*
+/*Animation for next button click */
 .slider3.next3 .list3 .item:nth-child(1) img{
     width: 150px;
     height: 220px;
@@ -1182,7 +1182,7 @@ button:hover{
 }
 
 
-/* Animation for next3 button click *//*
+/* Animation for next3 button click */
 @keyframes showThumbnail3{
     from{
         width: 0;
@@ -1202,7 +1202,7 @@ button:hover{
 
 
 
-/* Animation for prev button click *//*
+/*Animation for prev button click */
 .slider3.prev3 .list3 .item:nth-child(2){
     z-index: 2;
 }
