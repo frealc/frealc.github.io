@@ -11,7 +11,7 @@ let datecountdown = new Date(2026, 0, 17, 8).getTime()
 
                 document.querySelector(".countdown").innerHTML =`
                     <div class="boite">
-                        <span class="unite">T -</span>
+                        <span class="valeur">T -</span>
                     </div>
                     <div class="boite">
                         <span class="valeur">${jours}</span>
