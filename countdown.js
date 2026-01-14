@@ -1,4 +1,4 @@
-let datecountdown = new Date(2026, 01, 17, 8).getTime()
+let datecountdown = new Date(2026, 0, 17, 8).getTime()
             
             let x = setInterval(function(){
 
