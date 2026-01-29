@@ -1273,6 +1273,7 @@ button:hover{
     }
 }
 
+
 .slider4 {
     height: 100vh;
     width: 100vw;
@@ -1280,24 +1281,24 @@ button:hover{
     position: relative;
 }
 
-.slider4 .list3 .item {
+.slider4 .list4 .item {
     width: 100%;
     height: 100%;
     position: absolute;
     inset: 0 0 0 0;
 }
 
-.slider4 .list3 .item img {
+.slider4 .list4 .item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.slider4 .list3 .item button {
+.slider4 .list4 .item button {
     margin-top: 15px;
 }
 
-.slider4 .list3 .item .content {
+.slider4 .list4 .item .content {
     position: absolute;
     top: 20%;
     width: 1140px;
@@ -1311,28 +1312,28 @@ button:hover{
     font-weight: bold;
 }
 
-.slider4 .list3 .item .content .title,
-.slider4 .list3 .item .content .type {
+.slider4 .list4 .item .content .title,
+.slider4 .list4 .item .content .type {
     font-size: 50px;
     margin-bottom: 15px;
 }
 
-.slider4 .list3 .item .content .title {
-    -webkit-text-stroke: 0.4px #E7D63F;
+.slider4 .list4 .item .content .title {
+    -webkit-text-stroke: 0.4px #E7D64F;
 }
 
-.slider4 .list3 .item .content .type {
-    color: #E7D63F;
-    -webkit-text-stroke: 0.4px #1B368B;
+.slider4 .list4 .item .content .type {
+    color: #E7D64F;
+    -webkit-text-stroke: 0.4px #1B468B;
 }
 
-.slider4 .list3 .description {
+.slider4 .list4 .description {
     background-color: rgba(255, 255, 255, 0.4);
     font-size: 20px;
 }
 
 /* Thumbnail Section */
-.slider4 .thumbnail3 {
+.slider4 .thumbnail4 {
     position: absolute;
     bottom: 50px;
     left: 50%;
@@ -1342,23 +1343,23 @@ button:hover{
     gap: 20px;
 }
 
-.slider4 .thumbnail3 .item {
+.slider4 .thumbnail4 .item {
     width: 150px;
     height: 220px;
     flex-shrink: 0;
     position: relative;
 }
 
-.slider4 .thumbnail3 .item img {
+.slider4 .thumbnail4 .item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
-    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.4);
 }
 
 /* Next/Prev Arrows Section */
-.slider4 .nextPrevArrows3 {
+.slider4 .nextPrevArrows4 {
     position: absolute;
     top: 80%;
     right: 52%;
@@ -1370,41 +1371,41 @@ button:hover{
     align-items: center;
 }
 
-.slider4 .nextPrevArrows3 button {
+.slider4 .nextPrevArrows4 button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #E7D63F;
+    background-color: #E7D64F;
     border: none;
-    color: #1B368B;
+    color: #1B468B;
     font-family: monospace;
     font-weight: bold;
     transition: .5s;
     cursor: pointer;
 }
 
-.slider4 .nextPrevArrows3 button:hover {
-    background-color: #1B368B;
-    color: #E7D63F;
+.slider4 .nextPrevArrows4 button:hover {
+    background-color: #1B468B;
+    color: #E7D64F;
 }
 
 /* Animation Part */
-.slider4 .list3 .item:nth-child(1) {
+.slider4 .list4 .item:nth-child(1) {
     z-index: 1;
 }
 
 /* Animation text in first item */
-.slider4 .list3 .item:nth-child(1) .content .title,
-.slider4 .list3 .item:nth-child(1) .content .type,
-.slider4 .list3 .item:nth-child(1) .content .description,
-.slider4 .list3 .item:nth-child(1) .content .buttons {
+.slider4 .list4 .item:nth-child(1) .content .title,
+.slider4 .list4 .item:nth-child(1) .content .type,
+.slider4 .list4 .item:nth-child(1) .content .description,
+.slider4 .list4 .item:nth-child(1) .content .buttons {
     transform: translateY(50px);
     filter: blur(20px);
     opacity: 0;
-    animation: showContent3 .5s 1s linear 1 forwards;
+    animation: showContent4 .5s 1s linear 1 forwards;
 }
 
-@keyframes showContent3 {
+@keyframes showContent4 {
     to {
         transform: translateY(0px);
         filter: blur(0px);
@@ -1412,34 +1413,34 @@ button:hover{
     }
 }
 
-.slider4 .list3 .item:nth-child(1) .content .title {
+.slider4 .list4 .item:nth-child(1) .content .title {
     animation-delay: 0.4s !important;
 }
 
-.slider4 .list3 .item:nth-child(1) .content .type {
+.slider4 .list4 .item:nth-child(1) .content .type {
     animation-delay: 0.6s !important;
 }
 
-.slider4 .list3 .item:nth-child(1) .content .description {
+.slider4 .list4 .item:nth-child(1) .content .description {
     animation-delay: 0.8s !important;
 }
 
-.slider4 .list3 .item:nth-child(1) .content .buttons {
+.slider4 .list4 .item:nth-child(1) .content .buttons {
     animation-delay: 1s !important;
 }
 
 /* Animation for next button click */
-.slider4.next3 .list3 .item:nth-child(1) img {
+.slider4.next4 .list4 .item:nth-child(1) img {
     width: 150px;
     height: 220px;
     position: absolute;
     bottom: 50px;
     left: 50%;
-    border-radius: 30px;
-    animation: showImage3 .5s linear 1 forwards;
+    border-radius: 40px;
+    animation: showImage4 .5s linear 1 forwards;
 }
 
-@keyframes showImage3 {
+@keyframes showImage4 {
     to {
         bottom: 0;
         left: 0;
@@ -1449,46 +1450,46 @@ button:hover{
     }
 }
 
-.slider4.next3 .thumbnail3 .item:nth-last-child(1) {
+.slider4.next4 .thumbnail4 .item:nth-last-child(1) {
     overflow: hidden;
-    animation: showThumbnail3 .5s linear 1 forwards;
+    animation: showThumbnail4 .5s linear 1 forwards;
 }
 
-.slider4.prev3 .list3 .item img {
+.slider4.prev4 .list4 .item img {
     z-index: 100;
 }
 
 /* Thumbnail animation */
-@keyframes showThumbnail3 {
+@keyframes showThumbnail4 {
     from {
         width: 0;
         opacity: 0;
     }
 }
 
-.slider4.next3 .thumbnail3 {
-    animation: effectNext3 .5s linear 1 forwards;
+.slider4.next4 .thumbnail4 {
+    animation: effectNext4 .5s linear 1 forwards;
 }
 
-@keyframes effectNext3 {
+@keyframes effectNext4 {
     from {
         transform: translateX(150px);
     }
 }
 
 /* Animation for prev button click */
-.slider4.prev3 .list3 .item:nth-child(2) {
+.slider4.prev4 .list4 .item:nth-child(2) {
     z-index: 2;
 }
 
-.slider4.prev3 .list3 .item:nth-child(2) img {
-    animation: outFrame3 0.5s linear 1 forwards;
+.slider4.prev4 .list4 .item:nth-child(2) img {
+    animation: outFrame4 0.5s linear 1 forwards;
     position: absolute;
     bottom: 0;
     left: 0;
 }
 
-@keyframes outFrame3 {
+@keyframes outFrame4 {
     to {
         width: 150px;
         height: 220px;
@@ -1498,25 +1499,25 @@ button:hover{
     }
 }
 
-.slider4.prev3 .thumbnail3 .item:nth-child(1) {
+.slider4.prev4 .thumbnail4 .item:nth-child(1) {
     overflow: hidden;
     opacity: 0;
-    animation: showThumbnail3 .5s linear 1 forwards;
+    animation: showThumbnail4 .5s linear 1 forwards;
 }
 
-.slider4.next3 .nextPrevArrows3 button,
-.slider4.prev3 .nextPrevArrows3 button {
+.slider4.next4 .nextPrevArrows4 button,
+.slider4.prev4 .nextPrevArrows4 button {
     pointer-events: none;
 }
 
-.slider4.prev3 .list3 .item:nth-child(2) .content .title,
-.slider4.prev3 .list3 .item:nth-child(2) .content .type,
-.slider4.prev3 .list3 .item:nth-child(2) .content .description,
-.slider4.prev3 .list3 .item:nth-child(2) .content .buttons {
-    animation: contentOut3 1.5s linear 1 forwards !important;
+.slider4.prev4 .list4 .item:nth-child(2) .content .title,
+.slider4.prev4 .list4 .item:nth-child(2) .content .type,
+.slider4.prev4 .list4 .item:nth-child(2) .content .description,
+.slider4.prev4 .list4 .item:nth-child(2) .content .buttons {
+    animation: contentOut4 1.5s linear 1 forwards !important;
 }
 
-@keyframes contentOut3 {
+@keyframes contentOut4 {
     to {
         transform: translateY(-150px);
         filter: blur(20px);
@@ -1526,15 +1527,14 @@ button:hover{
 
 /* Responsive */
 @media screen and (max-width: 678px) {
-    .slider4 .list3 .item .content {
+    .slider4 .list4 .item .content {
         padding-right: 0;
     }
 
-    .slider4 .list3 .item .content .title {
+    .slider4 .list4 .item .content .title {
         font-size: 50px;
     }
 }
-
 
 .alfa-slab {
     font-family: "Alfa Slab One", serif;
