@@ -270,7 +270,7 @@ button:hover{
     background: url(Equipe3.jpg);
     background-size:cover;
     background-position: center; 
-    min-height: 1363px;
+    min-height: 400px;
     background-attachment: fixed;
     display:flex;
     flex-direction: column;
