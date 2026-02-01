@@ -271,6 +271,7 @@ button:hover{
     background-size:cover;
     background-position: center; 
     min-height: 400px;
+    max-height: 500px;
     background-attachment: fixed;
     display:flex;
     flex-direction: column;
