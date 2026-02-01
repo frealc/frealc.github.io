@@ -267,10 +267,10 @@ button:hover{
 .pimg1{
     
     width:100%;
-    background: url(Equipe2.jpg);
+    background: url(Equipe3.jpg);
     background-size:cover;
     background-position: center; 
-    min-height: 531px;
+    min-height: 1363px;
     background-attachment: fixed;
     display:flex;
     flex-direction: column;
