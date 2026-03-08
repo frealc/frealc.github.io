@@ -125,7 +125,7 @@ header::before{
     border-radius: 5px;
     border: none;
     color: #1B368B;
-    background: #E7D63F;
+    background: #F9CA02;
     font-family: "Alfa Slab One", serif;
     font-weight: 400;
     font-style: normal;
@@ -137,11 +137,11 @@ header::before{
 }
 button a:hover {
     text-decoration: none;
-    color: #E7D63F;
+    color: #F9CA02;
 }
 button:hover{
     background-color: #1B368B;
-    color: #E7D63F;
+    color: #F9CA02;
 }
 
 #nous .container{
@@ -404,7 +404,7 @@ button:hover{
     padding-right: 40px;
     padding-bottom: 20px;
     border-radius: 20px;
-    background-color: #E7D63F;
+    background-color: #F9CA02;
     color: #1B368B;
     text-align: center;
     justify-content: center;
@@ -428,7 +428,7 @@ button:hover{
 }
 
 .sectioncountdown{
-    background-color: #E7D63F;
+    background-color: #F9CA02;
     color:#1B368B;
     justify-content: center;
     text-align: center;
@@ -443,7 +443,7 @@ button:hover{
 }
 
 .sectioncountdown2{
-    background-color: #E7D63F;
+    background-color: #F9CA02;
     display: block;
     padding: 30px;
 }
@@ -530,10 +530,10 @@ button:hover{
     margin-bottom: 15px;
 }
 .slider .list .item .content .title{
-    -webkit-text-stroke: 0.4px #E7D63F;
+    -webkit-text-stroke: 0.4px #F9CA02;
 }
 .slider .list .item .type{
-    color: #E7D63F;
+    color: #F9CA02;
     -webkit-text-stroke: 0.4px #1B368B;
 }
 .slider .list .description{
@@ -583,7 +583,7 @@ button:hover{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #E7D63F;
+    background-color: #F9CA02;
     border: none;
     color: #1B368B;
     font-family: monospace;
@@ -593,7 +593,7 @@ button:hover{
 }
 .slider .nextPrevArrows button:hover{
     background-color: #1B368B;
-    color: #E7D63F;
+    color: #F9CA02;
 }
 
 /* Animation Part */
@@ -793,11 +793,11 @@ button:hover{
 }
 
 .slider2 .list2 .item .content .title {
-    -webkit-text-stroke: 0.4px #E7D63F;
+    -webkit-text-stroke: 0.4px #F9CA02;
 }
 
 .slider2 .list2 .item .content .type {
-    color: #E7D63F;
+    color: #F9CA02;
     -webkit-text-stroke: 0.4px #1B368B;
 }
 
@@ -849,7 +849,7 @@ button:hover{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #E7D63F;
+    background-color: #F9CA02;
     border: none;
     color: #1B368B;
     font-family: monospace;
@@ -860,7 +860,7 @@ button:hover{
 
 .slider2 .nextPrevArrows2 button:hover {
     background-color: #1B368B;
-    color: #E7D63F;
+    color: #F9CA02;
 }
 
 /* Animation Part */
@@ -1057,11 +1057,11 @@ button:hover{
 }
 
 .slider3 .list3 .item .content .title {
-    -webkit-text-stroke: 0.4px #E7D63F;
+    -webkit-text-stroke: 0.4px #F9CA02;
 }
 
 .slider3 .list3 .item .content .type {
-    color: #E7D63F;
+    color: #F9CA02;
     -webkit-text-stroke: 0.4px #1B368B;
 }
 
@@ -1113,7 +1113,7 @@ button:hover{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #E7D63F;
+    background-color: #F9CA02;
     border: none;
     color: #1B368B;
     font-family: monospace;
@@ -1124,7 +1124,7 @@ button:hover{
 
 .slider3 .nextPrevArrows3 button:hover {
     background-color: #1B368B;
-    color: #E7D63F;
+    color: #F9CA02;
 }
 
 /* Animation Part */
