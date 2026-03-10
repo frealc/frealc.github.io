@@ -229,6 +229,7 @@ button:hover{
 }
 #palmares .container .palmares-image{
     margin-left: 12%;
+    margin-bottom: 20px;
     overflow: hidden;
     display: flex;
     display: grid;
@@ -403,6 +404,24 @@ button:hover{
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: #F9CA02;
+    color: #1B368B;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.boite_bis{
+    width: 210px;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 20px;
     background-color: #F9CA02;
     color: #1B368B;

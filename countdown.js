@@ -10,7 +10,7 @@ let datecountdown = new Date(2026, 2, 21, 11).getTime()
                 let secondes = Math.floor(tpsrestant % (1000*60) / (1000));
 
                 document.querySelector(".countdown").innerHTML =`
-                    <div class="boite">
+                    <div class="boite_bis">
                         <span class="valeur">T -</span>
                     </div>
                     <div class="boite">
