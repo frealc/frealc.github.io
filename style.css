@@ -450,6 +450,7 @@ button:hover{
     background-color: #F9CA02;
     color:#1B368B;
     justify-content: center;
+    border-radius: 15px;
     text-align: center;
     display: block;
     padding: 20px;
