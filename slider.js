@@ -10,11 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const thumbs = container.querySelectorAll(".thumb");
 
     let index = 0;
+    let isInitialLoad = true;
 
     function showSlide(i) {
       if (slides.length === 0) return;
-   
-    if (i >= slides.length) i = 0;
+
+      // sécuriser l'index
+      if (i >= slides.length) i = 0;
       if (i < 0) i = slides.length - 1;
 
       slides.forEach(s => s.classList.remove("active"));
@@ -25,11 +27,13 @@ document.addEventListener("DOMContentLoaded", () => {
         if (thumbs[i]) {
           thumbs[i].classList.add("active");
           
-          thumbs[i].scrollIntoView({
-            behavior: "smooth",
-            block: "nearest",
-            inline: "center"
-          });
+          if (!isInitialLoad) {
+            thumbs[i].scrollIntoView({
+              behavior: "smooth",
+              block: "nearest",
+              inline: "center"
+            });
+          }
         }
       }
 
@@ -61,6 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // initialisation
     showSlide(0);
+    isInitialLoad = false;
 
   });
 
